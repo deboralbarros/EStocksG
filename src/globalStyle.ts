@@ -11,7 +11,7 @@ export default createGlobalStyle`
         height: 100%;
         font-family: 'Georama', sans-serif;
         ${css`
-            background: url(${Background}) #12131A center top;
+            background: url(${Background}) #12131A center top no-repeat;
         `}
     }
     

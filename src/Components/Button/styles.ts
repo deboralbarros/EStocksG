@@ -12,5 +12,6 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    color: #fff;
-`
+    color: ${({ color }) => color === 'primary' ? '#12131A' : '#fff'};
+    margin: 10px;
+`;

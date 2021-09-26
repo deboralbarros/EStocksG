@@ -3,7 +3,7 @@ import { Text as StyledText } from './styles'
 
 interface TextProps {
     fontSize: number;
-    children: ReactElement | string;
+    children: ReactElement | string | number;
     fontWeight: number;
 }
 
