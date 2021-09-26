@@ -5,8 +5,6 @@ import Text from './Components/Text';
 import CompanyList from './Components/CompanyList';
 
 const App = (): ReactElement => {
-  
-
   return (
     <>
       <GlobaStyles />
