@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from 'styled-components';
+import styled, { createGlobalStyle, css } from 'styled-components';
 import Background from './Assets/image.png';
 
 export default createGlobalStyle`
@@ -13,10 +13,18 @@ export default createGlobalStyle`
         ${css`
             background: url(${Background}) #12131A center top;
         `}
-         /*  */
     }
     
     * {
         font-family: 'Georama', sans-serif;
     }
 `;
+
+export const TitleContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+`;
+
