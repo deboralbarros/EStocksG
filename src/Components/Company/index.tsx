@@ -2,7 +2,7 @@ import { ReactElement } from 'react';
 import { CompanyDataProps } from '../CompanyList';
 import Text from '../Text';
 import { Container, Color, Button, Left } from './styles';
-import PlusIcon from '../../Assets/Vector.svg';
+import PlusIcon from '../../Assets/Plus.svg';
 
 const Company = ({ companyName, metric, color }: CompanyDataProps): ReactElement => {
     return (

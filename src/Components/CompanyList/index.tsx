@@ -2,6 +2,7 @@ import { ReactElement, useState } from 'react';
 import { Container } from './styles';
 import Company from '../Company';
 import Button from '../Button';
+import Filter from '../Filter';
 
 export interface CompanyDataProps {
     companyName: string;
@@ -42,6 +43,7 @@ const CompanyList = (): ReactElement => {
 
     return (
         <Container>
+            {showMore && <Filter />}
             {companies.map(({ companyName, metric, color }) => 
                 <Company companyName={companyName} metric={metric} color={color} />
             )}

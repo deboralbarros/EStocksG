@@ -11,5 +11,5 @@ export const Text = styled.p<TextProps>`
     color: #fff;
     width: 50%;
     text-align: center;
-    margin: 16px 0;
+    margin: 8px 0;
 `;
