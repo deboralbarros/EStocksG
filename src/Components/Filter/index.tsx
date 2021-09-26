@@ -1,10 +1,19 @@
 import { ReactElement, useState } from 'react';
-import { Container, Button, FilterOptions, FilterOptionButton, SecondaryOptions, SecondaryButton, ContainerSecondary } from './styles';
+import { 
+    Container, 
+    Button, 
+    FilterOptions, 
+    FilterOptionButton, 
+    SecondaryOptions, 
+    SecondaryButton, 
+    ContainerSecondary,
+    FilterContainer
+} from './styles';
 import FilterIcon from '../../Assets/Filter.svg';
 import SecondaryFilterIcon from '../../Assets/SecondaryFilter.svg';
 import Text from '../Text';
 
-type SecondaryButtonType = 
+export type SecondaryButtonType = 
     'Poluição do ar e da água' 
     | 'Biodiversidade' 
     | 'Aquecimento global e emissão de CO2' 
@@ -14,10 +23,15 @@ type SecondaryButtonType =
     | 'Escassez de água'
     | undefined;
 
-const Filter = (): ReactElement => {
+interface FilterProps {
+    selectedFilter: 'e' | 's' | 'g' | undefined;
+    setSelectedFilter: (value: any) => void;
+    selectedSecondaryFilter: SecondaryButtonType;
+    setSelectedSecondaryFilter: (value: any) => void
+}
+
+const Filter = ({ selectedFilter, setSelectedFilter, selectedSecondaryFilter, setSelectedSecondaryFilter }: FilterProps): ReactElement => {
     const [active, setActive] = useState(false);
-    const [selectedFilter, setSelectedFilter] = useState<'e' | 's' | 'g' | undefined>(undefined);
-    const [selectedSecondaryFilter, setSelectedSecondaryFilter] = useState<SecondaryButtonType>(undefined);
 
     return (
         <>
@@ -34,13 +48,7 @@ const Filter = (): ReactElement => {
                 </Container>
             )}
             {active && (
-                <div style={{
-                    display: 'flex',
-                    flexDirection: 'row',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    width: '70%'
-                }}>
+                <FilterContainer>
                     <FilterOptions>
                         <FilterOptionButton 
                             color={selectedFilter === 'e' ? "primary" : "secondary"} 
@@ -80,7 +88,7 @@ const Filter = (): ReactElement => {
                             <img src={SecondaryFilterIcon} alt="" />
                         </Button>
                     </ContainerSecondary>
-                </div>
+                </FilterContainer>
             )}
 
             {selectedFilter === 'e' && 
