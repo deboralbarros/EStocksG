@@ -87,3 +87,5 @@ npm run start
 - [Henrique Manoel](https://www.linkedin.com/in/henrique-manoel-vasconcelos-maciel/)
 
 - [Tatyana Mendes](https://www.linkedin.com/in/tatyanamendes)
+
+- [Luiz Vasconcelos](https://www.linkedin.com/in/luiz-vasconcelos-j%C3%BAnior-155ba01a4/)
