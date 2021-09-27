@@ -21,6 +21,14 @@ export const Container = styled.div`
     margin-right: 190px;
 `;
 
+export const FilterContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+`;
+
 export const ContainerSecondary = styled.div`
     background: #1C1C25;
     width: 53px;

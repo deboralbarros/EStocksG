@@ -1,46 +1,91 @@
-# Getting Started with Create React App
+# EStocksG
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Plataforma desenvolvida durante do Navi Tech Journey
 
-## Available Scripts
+Disponível em: [EStocksG](https://estocksg.vercel.app)
 
-In the project directory, you can run:
+## ❓ O que é?
 
-### `yarn start`
+Um problema intrínseco ao Brasil é a má educação financeira, muito além de economizar e cortar
+gastos, a educação financeira é buscar uma melhor qualidade de vida investindo para o futuro. De
+acordo com a B3 cerca de 3.8 milhões (junho de 2021) dos brasileiros investem, tendo como maior
+crescimento os jovens. Dentro desse universo, muitas plataformas hoje se diferenciam por olhar as
+boas práticas, como por exemplo a plataforma de propósitos da corretora Órama.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Esses investidores da nova geração além de estarem investindo mais que a geração anterior, se
+preocupam bem mais com esses aspectos de sustentabilidade. Essa mudança de paradigma
+necessita de melhores formas de democratizar o acesso e a relação das empresas com esses
+aspectos ESG.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Para isso, criamos uma plataforma chamada EStocksG que de acordo com as métricas de
+sustentabilidade, produz um ranking com as empresas brasileiras da mais sustentável, de
+acordo com os parâmetros produzidos, à menos sustentável.
 
-### `yarn test`
+Dessa forma, o investidor consegue saber em que local a empresa em que pretende investir
+está localizada no ranking e tirar insights de: "Essa empresa é uma empresa que se importa
+com a causa de fato no Brasil?" e também visualizar uma comparação setorial desses
+critérios.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ademais, para a idealização do impacto das variáveis ESG ao longo do tempo, a plataforma também
+disponibiliza um gráfico que podemos acompanhar o valor da empresa e como os critérios ESG
+foram evoluindo anualmente.
 
-### `yarn build`
+A plataforma visa poupar o tempo do investidor na visualização Fornecer insight sobre a
+relevância dos fatores ESG no valor de mercado da empresa Auxilia na construção de um mundo
+mais sustentável, forçando as empresas a melhorarem suas métricas para ter um lugar mais
+relevante no ranking.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🖥️ Como rodar?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar, siga os seguintes passos:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório:
+```zsh
+git clone https://github.com/deboralbarros/EStocksG.git
+```
 
-### `yarn eject`
+2. Entre na pasta do projeto e instale as dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Necessário ter o [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/) instalados.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```zsh
+cd estocksg
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# com yarn
+yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# com npm
+npm install
+```
 
-## Learn More
+3. Rode o script para iniciar a aplicação:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```zsh
+# com yarn
+yarn start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# com npm
+npm run start
+```
+
+## 👩‍💻 Tecnologias utilizadas
+
+- [ReactJs](https://pt-br.reactjs.org/)
+
+- [Typescript](https://www.typescriptlang.org/)
+
+- [Styled Components](https://styled-components.com/)
+
+- [Chart.js](https://www.chartjs.org/)
+
+## 🧑‍🤝‍🧑 Equipe
+
+- [Débora Barros](https://linkedin.com/in/debora-lbarros)
+
+- [Fernando Noggueira](https://www.linkedin.com/in/fernando-noggueira/)
+
+- [Henrique Manoel](https://www.linkedin.com/in/henrique-manoel-vasconcelos-maciel/)
+
+- [Tatyana Mendes](https://www.linkedin.com/in/tatyanamendes)
+
+- [Luiz Vasconcelos](https://www.linkedin.com/in/luiz-vasconcelos-j%C3%BAnior-155ba01a4/)

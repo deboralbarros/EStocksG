@@ -2,7 +2,7 @@ import { ReactElement, useState } from 'react';
 import { Container } from './styles';
 import Company from '../Company';
 import Button from '../Button';
-import Filter from '../Filter';
+import Filter, { SecondaryButtonType } from '../Filter';
 
 export interface CompanyDataProps {
     companyName: string;
@@ -12,6 +12,8 @@ export interface CompanyDataProps {
 
 const CompanyList = (): ReactElement => {
     const [showMore, setShowMore] = useState(false);
+    const [selectedFilter, setSelectedFilter] = useState<'e' | 's' | 'g' | undefined>(undefined);
+    const [selectedSecondaryFilter, setSelectedSecondaryFilter] = useState<SecondaryButtonType>(undefined);
 
     const companies: CompanyDataProps[] = [
         {
@@ -43,9 +45,14 @@ const CompanyList = (): ReactElement => {
 
     return (
         <Container>
-            {showMore && <Filter />}
-            {companies.map(({ companyName, metric, color }) => 
-                <Company companyName={companyName} metric={metric} color={color} />
+            {showMore && <Filter 
+                setSelectedSecondaryFilter={setSelectedSecondaryFilter} 
+                selectedFilter={selectedFilter} 
+                selectedSecondaryFilter={selectedSecondaryFilter}
+                setSelectedFilter={setSelectedFilter}
+            />}
+            {companies.map((data) => 
+                <Company data={data} filter={selectedSecondaryFilter} />
             )}
             {!showMore && <Button onClick={() => setShowMore(true)} label="Ver todos" color="primary" />}
         </Container>
