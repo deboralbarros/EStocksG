@@ -6,6 +6,7 @@ import { Container, Color, Button, Right, ChartContainer, Header } from './style
 import PlusIcon from '../../Assets/Plus.svg';
 import LessIcon from '../../Assets/Less.svg';
 import Chart from 'chart.js';
+import ButtonComponent from '../Button';
 
 interface CompanyProps {
     data: CompanyDataProps;
@@ -44,6 +45,7 @@ const Company = ({ data, filter }: CompanyProps): ReactElement => {
                     <ChartContainer>
                         {filter && <Text fontSize={24} fontWeight={400}>{filter}</Text>}
                         <Line data={dataChart}/> 
+                        <ButtonComponent onClick={() => {}} label="Investimento" color="primary" />  
                     </ChartContainer>
                 )}
             </Container>
